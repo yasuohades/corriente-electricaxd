@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corriente Eléctrica</title>
+  <style>
+    :root{
+      --azul:#0a3d62;
+      --amarillo:#fbc531;
+      --blanco:#ffffff;
+      --gris:#f5f6fa;
+    }
+    *{box-sizing:border-box; margin:0; padding:0; font-family:'Segoe UI', sans-serif;}
+    body{background:var(--gris); color:#2f3640; line-height:1.6;}
+    header{
+      background:linear-gradient(135deg,var(--azul),#1e90ff);
+      color:var(--blanco);
+      padding:60px 20px;
+      text-align:center;
+    }
+    header h1{font-size:2.5rem;}
+    header p{max-width:700px; margin:15px auto;}
+    nav{
+      position:sticky; top:0; z-index:100;
+      background:var(--blanco);
+      display:flex; justify-content:center; gap:15px;
+      padding:10px; box-shadow:0 2px 8px rgba(0,0,0,.1);
+      flex-wrap:wrap;
+    }
+    nav a{text-decoration:none; color:var(--azul); font-weight:600;}
+    section{
+      max-width:1100px; margin:40px auto; padding:30px;
+      background:var(--blanco); border-radius:16px;
+      box-shadow:0 4px 15px rgba(0,0,0,.08);
+    }
+    section h2{color:var(--azul); margin-bottom:15px;}
+    section ul{margin-left:20px;}
+    footer{
+      background:var(--azul); color:var(--blanco);
+      text-align:center; padding:20px; margin-top:40px;
+    }
+    .admin{
+      position:fixed; bottom:20px; right:20px;
+      background:var(--amarillo); color:#000;
+      border:none; border-radius:50%;
+      width:55px; height:55px; font-size:1.4rem;
+      cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,.3);
+    }
+    .edit{border:2px dashed var(--amarillo); padding:10px;}
+    @media(max-width:768px){
+      header h1{font-size:2rem;}
+      section{margin:20px; padding:20px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ Corriente Eléctrica</h1>
+  <p>Landing page educativa basada en la ficha de investigación científica “La Electricidad”.</p>
+</header>
+
+<nav>
+  <a href="#intro">Introducción</a>
+  <a href="#concepto">Concepto</a>
+  <a href="#tipos">Tipos</a>
+  <a href="#circuitos">Circuitos</a>
+  <a href="#generacion">Generación</a>
+  <a href="#retos">Retos</a>
+  <a href="#conclusiones">Conclusiones</a>
+  <a href="#referencias">Referencias</a>
+</nav>
+
+<section id="intro" contenteditable="false">
+  <h2>🔌 Introducción</h2>
+  <p>La electricidad es un fenómeno físico fundamental que forma parte de nuestra vida cotidiana. Gracias a ella podemos iluminar hogares, utilizar dispositivos electrónicos, comunicarnos y desarrollar actividades industriales y científicas.</p>
+  <p>Desde el encendido de una bombilla hasta el funcionamiento de hospitales, escuelas y sistemas de transporte, la electricidad es un pilar del desarrollo tecnológico y social moderno.</p>
+</section>
+
+<section id="concepto" contenteditable="false">
+  <h2>⚡ Concepto de corriente eléctrica</h2>
+  <p>La corriente eléctrica es el movimiento ordenado de cargas eléctricas, principalmente electrones, a través de un material conductor. Este movimiento se produce cuando existe una diferencia de potencial eléctrico (voltaje) entre dos puntos.</p>
+  <p>La intensidad de la corriente se mide en amperios (A) y depende del voltaje aplicado y de la resistencia del material, relación explicada por la Ley de Ohm.</p>
+  <p>Las magnitudes eléctricas fundamentales son el voltaje (V), la corriente (I) y la resistencia (R).</p>
+</section>
+
+<section id="tipos" contenteditable="false">
+  <h2>🔄 Tipos de corriente eléctrica</h2>
+  <ul>
+    <li><b>Corriente continua (CC):</b> circula en un solo sentido. Se usa en pilas, baterías, paneles solares y dispositivos electrónicos.</li>
+    <li><b>Corriente alterna (CA):</b> cambia de sentido periódicamente. Es la que se distribuye en hogares e industrias.</li>
+  </ul>
+</section>
+
+<section id="circuitos" contenteditable="false">
+  <h2>🧩 Circuitos eléctricos</h2>
+  <p>Un circuito eléctrico es un conjunto de elementos conectados que permiten el paso de la corriente eléctrica.</p>
+  <ul>
+    <li><b>Elementos básicos:</b> fuente, conductores, interruptor y receptor.</li>
+    <li><b>Tipos:</b> serie, paralelo y mixto.</li>
+  </ul>
+</section>
+
+<section id="generacion" contenteditable="false">
+  <h2>🏭 Generación de la corriente eléctrica</h2>
+  <p>La electricidad se genera transformando distintas fuentes de energía en energía eléctrica.</p>
+  <ul>
+    <li>Hidroeléctrica</li>
+    <li>Térmica</li>
+    <li>Solar</li>
+    <li>Eólica</li>
+    <li>Nuclear</li>
+  </ul>
+</section>
+
+<section id="retos" contenteditable="false">
+  <h2>🌱 Retos y desafíos</h2>
+  <ul>
+    <li>Consumo responsable de la energía</li>
+    <li>Reducción del impacto ambiental</li>
+    <li>Acceso equitativo a la electricidad</li>
+  </ul>
+</section>
+
+<section id="conclusiones" contenteditable="false">
+  <h2>✅ Conclusiones</h2>
+  <p>La corriente eléctrica es esencial para el desarrollo de la sociedad. Comprender su funcionamiento permite un uso responsable y sostenible.</p>
+</section>
+
+<section id="referencias" contenteditable="false">
+  <h2>📚 Referencias</h2>
+  <ul>
+    <li>Khan Academy (2023)</li>
+    <li>Bernal, T. (2019)</li>
+    <li>Floyd, T. L. (2016)</li>
+    <li>Ministerio del Ambiente del Perú (2023)</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Proyecto educativo – 5to de secundaria</p>
+</footer>
+
+<button class="admin" onclick="adminLogin()">🔑</button>
+
+<script>
+  function adminLogin(){
+    const clave = prompt('Ingrese la clave de administrador');
+    if(clave === 'CYT2025'){
+      document.querySelectorAll('section').forEach(sec=>{
+        sec.contentEditable = true;
+        sec.classList.add('edit');
+      });
+      alert('Modo administrador activado');
+    } else {
+      alert('Clave incorrecta');
+    }
+  }
+</script>
+
+</body>
+</html>
