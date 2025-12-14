@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corriente Eléctrica</title>
+  <style>
+    :root{
+      --azul:#0a3d62;
+      --amarillo:#fbc531;
+      --blanco:#ffffff;
+      --gris:#f5f6fa;
+    }
+    *{box-sizing:border-box; margin:0; padding:0; font-family:'Segoe UI', sans-serif;}
+    body{background:var(--gris); color:#2f3640; line-height:1.6;}
+    header{
+      background:linear-gradient(135deg,var(--azul),#1e90ff);
+      color:var(--blanco);
+      padding:60px 20px;
+    }
+    header .content{
+      max-width:1100px; margin:auto;
+      display:flex; gap:20px; align-items:center; justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    header img{
+      max-width:220px; width:100%; border-radius:16px;
+      box-shadow:0 4px 15px rgba(0,0,0,.3);
+    }
+    header h1{font-size:2.5rem;}
+    header p{max-width:700px; margin:15px auto;}
+    nav{
+      position:sticky; top:0; z-index:100;
+      background:var(--blanco);
+      display:flex; justify-content:center; gap:15px;
+      padding:10px; box-shadow:0 2px 8px rgba(0,0,0,.1);
+      flex-wrap:wrap;
+    }
+    nav a{text-decoration:none; color:var(--azul); font-weight:600;}
+    section{
+      max-width:1100px; margin:40px auto; padding:30px;
+      background:var(--blanco); border-radius:16px;
+      box-shadow:0 4px 15px rgba(0,0,0,.08);
+    }
+    .content{
+      display:flex; gap:20px; align-items:flex-start;
+    }
+    .content img{
+      max-width:300px; width:100%; border-radius:14px;
+    }
+    .content .text{flex:1;}
+    @media(max-width:768px){
+      .content{flex-direction:column;}
+      .content img{max-width:100%;}
+    }
+    section h2{color:var(--azul); margin-bottom:15px;}
+    section ul{margin-left:20px;}
+    footer{
+      background:var(--azul); color:var(--blanco);
+      text-align:center; padding:20px; margin-top:40px;
+    }
+    .admin{
+      position:fixed; bottom:20px; right:20px;
+      background:var(--amarillo); color:#000;
+      border:none; border-radius:50%;
+      width:55px; height:55px; font-size:1.4rem;
+      cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,.3);
+    }
+    .edit{border:2px dashed var(--amarillo); padding:10px;}
+    @media(max-width:768px){
+      header h1{font-size:2rem;}
+      section{margin:20px; padding:20px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="content">
+    <div class="text">
+      <h1>⚡ Corriente Eléctrica</h1>
+      <p>Landing page educativa basada en la ficha de investigación científica “La Electricidad”.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="Electricidad">
+  </div>
+</header>
+
+<nav>
+  <a href="#intro">Introducción</a>
+  <a href="#concepto">Concepto</a>
+  <a href="#tipos">Tipos</a>
+  <a href="#circuitos">Circuitos</a>
+  <a href="#generacion">Generación</a>
+  <a href="#retos">Retos</a>
+  <a href="#conclusiones">Conclusiones</a>
+  <a href="#referencias">Referencias</a>
+</nav>
+
+<section id="intro" contenteditable="false">
+  <h2>🔌 Introducción</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Uso de electricidad">
+    <div class="text">
+      <p>La electricidad es un fenómeno físico fundamental que forma parte de nuestra vida cotidiana. Gracias a ella podemos iluminar hogares, utilizar dispositivos electrónicos, comunicarnos y desarrollar actividades industriales y científicas.</p>
+      <p>Desde el encendido de una bombilla hasta el funcionamiento de hospitales, escuelas y sistemas de transporte, la electricidad es un pilar del desarrollo tecnológico y social moderno.</p>
+    </div>
+  </div>
+</section>
+
+<section id="concepto" contenteditable="false">
+  <h2>⚡ Concepto de corriente eléctrica</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Electronica y corriente">
+    <div class="text">
+      <p>La corriente eléctrica es el movimiento ordenado de cargas eléctricas, principalmente electrones, a través de un material conductor. Este movimiento se produce cuando existe una diferencia de potencial eléctrico (voltaje) entre dos puntos.</p>
+      <p>La intensidad de la corriente se mide en amperios (A) y depende del voltaje aplicado y de la resistencia del material, relación explicada por la Ley de Ohm.</p>
+      <p>Las magnitudes eléctricas fundamentales son el voltaje (V), la corriente (I) y la resistencia (R).</p>
+    </div>
+  </div>
+</section>
+
+<section id="tipos" contenteditable="false">
+  <h2>🔄 Tipos de corriente eléctrica</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1581091215367-59ab6bfc7b8b" alt="Corriente alterna y continua">
+    <div class="text">
+      <ul>
+        <li><b>Corriente continua (CC):</b> circula en un solo sentido. Se usa en pilas, baterías, paneles solares y dispositivos electrónicos.</li>
+        <li><b>Corriente alterna (CA):</b> cambia de sentido periódicamente. Es la que se distribuye en hogares e industrias.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="circuitos" contenteditable="false">
+  <h2>🧩 Circuitos eléctricos</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="Circuito electrico">
+    <div class="text">
+      <p>Un circuito eléctrico es un conjunto de elementos conectados que permiten el paso de la corriente eléctrica.</p>
+      <ul>
+        <li><b>Elementos básicos:</b> fuente, conductores, interruptor y receptor.</li>
+        <li><b>Tipos:</b> serie, paralelo y mixto.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="generacion" contenteditable="false">
+  <h2>🏭 Generación de la corriente eléctrica</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276" alt="Generacion electrica">
+    <div class="text">
+      <p>La electricidad se genera transformando distintas fuentes de energía en energía eléctrica.</p>
+      <ul>
+        <li>Hidroeléctrica</li>
+        <li>Térmica</li>
+        <li>Solar</li>
+        <li>Eólica</li>
+        <li>Nuclear</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="retos" contenteditable="false">
+  <h2>🌱 Retos y desafíos</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9" alt="Consumo de energia">
+    <div class="text">
+      <p>El uso de la electricidad presenta diversos retos para la sociedad actual. Uno de los principales es el <b>consumo responsable</b>, ya que el uso excesivo de energía incrementa los costos económicos y acelera el agotamiento de recursos.</p>
+      <p>Otro desafío importante es el <b>impacto ambiental</b> producido por las centrales que utilizan combustibles fósiles, las cuales generan contaminación y contribuyen al cambio climático.</p>
+      <p>Además, aún existe una desigualdad en el <b>acceso a la energía eléctrica</b>, especialmente en zonas rurales, lo que limita el desarrollo social y educativo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="conclusiones" contenteditable="false">
+  <h2>✅ Conclusiones</h2>
+  <div class="content">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Energia sostenible">
+    <div class="text">
+      <p>La corriente eléctrica es un elemento fundamental para el desarrollo de la sociedad moderna, ya que permite el funcionamiento de tecnologías esenciales en la vida diaria.</p>
+      <p>Conocer cómo se genera, cómo circula y cómo se utiliza la electricidad ayuda a tomar decisiones responsables que favorezcan el cuidado del medio ambiente.</p>
+      <p>Finalmente, promover el uso eficiente de la energía eléctrica contribuye a un futuro más sostenible y equitativo para las próximas generaciones.</p>
+    </div>
+  </div>
+</section>
+
+<section id="referencias" contenteditable="false">
+  <h2>📚 Referencias</h2>
+  <ul>
+    <li>Khan Academy (2023)</li>
+    <li>Bernal, T. (2019)</li>
+    <li>Floyd, T. L. (2016)</li>
+    <li>Ministerio del Ambiente del Perú (2023)</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Proyecto educativo – 5to de secundaria</p>
+</footer>
+
+<button class="admin" onclick="adminLogin()">🔑</button>
+
+<script>
+  function adminLogin(){
+    const clave = prompt('Ingrese la clave de administrador');
+    if(clave === 'CYT2025'){
+      document.querySelectorAll('section').forEach(sec=>{
+        sec.contentEditable = true;
+        sec.classList.add('edit');
+      });
+      alert('Modo administrador activado');
+    } else {
+      alert('Clave incorrecta');
+    }
+  }
+</script>
+
+</body>
+</html>
